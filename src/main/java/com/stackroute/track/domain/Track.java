@@ -11,25 +11,12 @@ public class Track {
     String comments;
 
     public Track() {
-
     }
 
     public Track(int trackId, String trackName, String comments) {
         this.trackId = trackId;
         this.trackName = trackName;
         this.comments = comments;
-    }
-
-    public Track(long trackId) {
-    }
-
-    @Override
-    public String toString() {
-        return "Track{" +
-                "trackId=" + trackId +
-                ", trackName='" + trackName + '\'' +
-                ", CommentsOfTheTrack='" + comments + '\'' +
-                '}';
     }
 
     public int getTrackId() {
@@ -43,17 +30,19 @@ public class Track {
     public String getTrackName() {
         return trackName;
     }
-
     public void setTrackName(String trackName) {
         this.trackName = trackName;
     }
 
     public String getComments() {
-        return this.comments;
+        return comments;
     }
-
     public void setComments(String comments) {
         this.comments = comments;
     }
 
+
+
 }
+
+
